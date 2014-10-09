@@ -20,8 +20,8 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+DISQUS_SITENAME = "passtheroc"
+GOOGLE_ANALYTICS = "UA-55540014-1"
 DEFAULT_DATE_FORMAT = '%b %d, %Y'
 
 
