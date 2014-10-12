@@ -7,6 +7,7 @@ from __future__ import unicode_literals
 
 import os
 import sys
+
 sys.path.append(os.curdir)
 from pelicanconf import *
 
@@ -22,25 +23,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 DISQUS_SITENAME = "passtheroc"
 GOOGLE_ANALYTICS = "UA-55540014-1"
-DEFAULT_DATE_FORMAT = '%b %d, %Y'
+GITHUB_URL = 'https://github.com/DanielWeitzenfeld'
 
-
-# STATIC_OUT_DIR requires pelican 3.3+.
-STATIC_PATHS = ['images', 'figures', 'downloads', 'favicon.png']
-CODE_DIR = 'downloads/code'
-NOTEBOOK_DIR = 'downloads/notebooks'
-
-
-path = os.path.curdir
-THEME = '%s/pelican-octopress-theme' % path
-PLUGIN_PATHS = ['%s/pelican-plugins' % path]
-
-PLUGINS = ['summary', 'liquid_tags.img', 'liquid_tags.video',
-           'liquid_tags.include_code', 'liquid_tags.notebook',
-           'liquid_tags.literal']
-
-DISPLAY_PAGES_ON_MENU = False
-DISPLAY_CATEGORIES_ON_MENU = False
-EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
-TWITTER_USER = 'weitzenfeld'
-TWITTER_FOLLOW_BUTTON = True

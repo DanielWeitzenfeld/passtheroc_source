@@ -22,7 +22,7 @@ TRANSLATION_FEED_ATOM = None
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 
 DEFAULT_DATE_FORMAT = '%b %d, %Y'
@@ -44,6 +44,15 @@ PLUGINS = ['summary', 'liquid_tags.img', 'liquid_tags.video',
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
-#EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
+EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
 TWITTER_USER = 'weitzenfeld'
 TWITTER_FOLLOW_BUTTON = True
+TWITTER_TWEET_BUTTON = True
+
+DIRECT_TEMPLATES = ('index', 'archives')
+
+# Set the article URL.
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
